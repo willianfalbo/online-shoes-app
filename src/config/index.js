@@ -1,4 +1,4 @@
-const NODE_ENV = checkConfig(process.env.NODE_ENV);
+export const NODE_ENV = checkConfig(process.env.NODE_ENV);
 
 function checkConfig(value) {
   if (!value) {
@@ -6,5 +6,3 @@ function checkConfig(value) {
   }
   return value;
 }
-
-export default { NODE_ENV };
