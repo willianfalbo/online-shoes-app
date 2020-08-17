@@ -4,7 +4,12 @@ import rootReducers from './modules/rootReducer';
 import rootSaga from './modules/rootSaga';
 import * as config from '../config';
 
-const sagaMiddleware = createSagaMiddleware();
+const sagaMonitor =
+  config.NODE_ENV === 'development' ? console.tron.createSagaMonitor() : null;
+
+const sagaMiddleware = createSagaMiddleware({
+  sagaMonitor,
+});
 
 const enhancer =
   config.NODE_ENV === 'development'
