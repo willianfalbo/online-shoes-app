@@ -6,6 +6,19 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   margin: 50px 0;
+  text-decoration: none;
+`;
+
+export const Logo = styled(Link)`
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.7;
+  }
 `;
 
 export const Cart = styled(Link)`

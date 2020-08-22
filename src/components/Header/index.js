@@ -1,18 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { MdShoppingBasket } from 'react-icons/md';
 
-import { Container, Cart } from './styles';
-import logoImg from '../../assets/images/logo.svg';
+import { Container, Cart, Logo } from './styles';
 
 function Header({ cartSize }) {
   return (
     <Container>
-      <Link to="/">
-        <img src={logoImg} alt="Online Shoes App"></img>
-      </Link>
+      <Logo to="/">SHOES APP</Logo>
 
       <Cart to="/cart">
         <div>
