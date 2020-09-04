@@ -1,7 +1,7 @@
 import Reactotron from 'reactotron-react-js';
 import { reactotronRedux } from 'reactotron-redux';
 import reactotronSaga from 'reactotron-redux-saga';
-import * as config from './';
+import * as config from '.';
 
 if (config.NODE_ENV === 'development') {
   const tron = Reactotron.configure()

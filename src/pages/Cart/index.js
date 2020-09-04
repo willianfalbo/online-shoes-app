@@ -1,12 +1,11 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import * as CartActions from '../../store/modules/cart/actions';
-
 import {
   MdRemoveCircleOutline,
   MdAddCircleOutline,
   MdDelete,
 } from 'react-icons/md';
+import * as CartActions from '../../store/modules/cart/actions';
 
 import { Container, ProductTable, Total } from './styles';
 import { formatPrice } from '../../util/format';
@@ -46,11 +45,11 @@ export default function Cart() {
       <ProductTable>
         <thead>
           <tr>
-            <th></th>
+            <th> </th>
             <th>Product</th>
             <th>Quantity</th>
             <th>Sub Total</th>
-            <th></th>
+            <th> </th>
           </tr>
         </thead>
         <tbody>
